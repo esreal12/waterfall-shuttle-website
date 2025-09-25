@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Bebas Neue", "Bebas Kai", "Impact", sans-serif;
+  --font-body: "Montserrat", "Gotham", "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+body {
+  @apply bg-brand-light text-brand-black font-body antialiased;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-brand-natural;
+}
+
+.section-eyebrow {
+  @apply uppercase tracking-[0.24em] text-sm font-semibold text-brand-natural;
+}
+
+.section-title {
+  @apply font-display text-4xl md:text-5xl text-brand-black;
+}
+
+.lead {
+  @apply text-lg md:text-xl text-brand-charcoal/90;
+}
+
+.placeholder-media {
+  @apply flex h-full w-full items-center justify-center rounded-xl border border-dashed border-brand-natural/40 bg-white/60 p-8 text-center text-sm text-brand-charcoal;
+}
