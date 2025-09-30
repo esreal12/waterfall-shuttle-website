@@ -1,27 +1,27 @@
 export function DestinationSection() {
   return (
-    <section id="destino" className="bg-white py-20">
+    <section id="destination" className="bg-white py-20">
       <div className="container grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center">
         <div className="space-y-6">
-          <p className="section-eyebrow">Destino</p>
-          <h2 className="section-title">Catarata Nauyaca: el tesoro escondido del Pacífico Sur</h2>
+          <p className="section-eyebrow">Destination</p>
+          <h2 className="section-title">Nauyaca Waterfall: the hidden jewel of Costa Rica's South Pacific</h2>
           <p className="lead">
-            La cascada doble más famosa de Costa Rica, rodeada de selva tropical y pozas naturales perfectas para nadar. Nuestro shuttle te lleva hasta el punto de ingreso oficial y coordina tu regreso.
+            The most iconic double waterfall in Costa Rica, surrounded by lush rainforest and natural pools perfect for swimming. Our shuttle takes you to the official entrance and coordinates your return trip.
           </p>
-          <ul className="space-y-3 text-sm text-brand-charcoal/85">
-            <li>• Altura de 45 metros y caudal ideal durante todo el año.</li>
-            <li>• Senderos mantenidos, servicios básicos y guía local disponible.</li>
-            <li>• Opción de tour a caballo o caminata, según tu preferencia.</li>
+          <ul className="list-disc space-y-3 pl-5 text-sm text-brand-charcoal/85">
+            <li>45-meter drop with a steady water flow year-round.</li>
+            <li>Maintained trails, basic amenities, and local guides available.</li>
+            <li>Choose between a horseback tour or a hike, depending on your style.</li>
           </ul>
           <a
-            href="#reservas"
+            href="#booking"
             className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-natural hover:text-brand-deep"
           >
-            Reserva tu transporte ahora →
+            Book your ride now ->
           </a>
         </div>
         <div className="placeholder-media h-[360px]">
-          Aquí irá una foto panorámica de Catarata Nauyaca al atardecer.
+          This area will showcase a panoramic shot of Nauyaca Waterfall at sunset.
         </div>
       </div>
     </section>

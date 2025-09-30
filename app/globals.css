@@ -35,3 +35,8 @@ a:hover {
 .placeholder-media {
   @apply flex h-full w-full items-center justify-center rounded-xl border border-dashed border-brand-natural/40 bg-white/60 p-8 text-center text-sm text-brand-charcoal;
 }
+
+/* Arregla posición del contenedor verde "Need a private schedule?" */
+.rounded-2xl.bg-brand-deep.p-6.text-white {
+  margin-top: 40px;
+}

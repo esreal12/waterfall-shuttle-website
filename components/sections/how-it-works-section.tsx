@@ -1,27 +1,30 @@
 const steps = [
   {
-    title: "Reserva",
-    description: "Completa el formulario o escríbenos por WhatsApp para elegir fecha, hora y lugar de pickup."
+    title: "Book",
+    description:
+      "Fill out the form or message us on WhatsApp to choose your date, time, and pickup location."
   },
   {
-    title: "Nos encontramos",
-    description: "Te confirmamos el punto exacto y hora de salida. Nuestro conductor te espera con tu nombre."
+    title: "Meet",
+    description:
+      "We confirm the exact spot and departure time. Your driver will be waiting with your name."
   },
   {
-    title: "Disfruta",
-    description: "Llegamos directamente al puesto de ingreso de Nauyaca y coordinamos el regreso a tu ritmo."
+    title: "Enjoy",
+    description:
+      "Arrive at the Nauyaca entrance and explore at your own pace. We coordinate the ride back."
   }
 ];
 
 export function HowItWorksSection() {
   return (
-    <section id="como-funciona" className="bg-brand-light py-20">
+    <section id="how-it-works" className="bg-brand-light py-20">
       <div className="container space-y-12">
         <div className="max-w-2xl space-y-4">
-          <p className="section-eyebrow">Cómo funciona</p>
-          <h2 className="section-title">Viajar a la catarata nunca fue tan sencillo</h2>
+          <p className="section-eyebrow">How it works</p>
+          <h2 className="section-title">Reaching the waterfall has never been easier</h2>
           <p className="lead">
-            Un proceso claro para reservar, coordinar y llegar sin estrés. Queremos que te concentres en vivir la experiencia.
+            A transparent process to book, coordinate, and arrive without stress. Your only task is to live the experience.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">

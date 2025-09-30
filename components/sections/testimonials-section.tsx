@@ -1,30 +1,30 @@
 const testimonials = [
   {
     quote:
-      "El servicio fue excelente. El conductor nos ayudó con consejos sobre cómo aprovechar mejor la catarata, y el viaje fue muy cómodo.",
-    name: "Laura, España"
+      "Excellent service. The driver shared tips on how to make the most of the waterfall, and the ride was very comfortable.",
+    name: "Laura, Spain"
   },
   {
     quote:
-      "Coordinamos por WhatsApp y todo resultó muy fácil. Nos recogieron en el hotel y a la vuelta tenían agua fría esperándonos.",
-    name: "Andrés, Chile"
+      "We coordinated everything through WhatsApp and it was super easy. They picked us up at the hotel and had cold water waiting after the hike.",
+    name: "Andres, Chile"
   },
   {
     quote:
-      "Perfecto para familias. Los niños viajaron seguros y puntuales. Repetiríamos sin dudarlo.",
-    name: "Michelle, Canadá"
+      "Perfect for families. The kids felt safe and we were always on time. We would book again without hesitation.",
+    name: "Michelle, Canada"
   }
 ];
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonios" className="bg-white py-20">
+    <section id="testimonials" className="bg-white py-20">
       <div className="container space-y-12">
         <div className="max-w-2xl space-y-4">
-          <p className="section-eyebrow">Testimonios</p>
-          <h2 className="section-title">Lo que dicen nuestros viajeros</h2>
+          <p className="section-eyebrow">Testimonials</p>
+          <h2 className="section-title">What travelers are saying</h2>
           <p className="lead">
-            Clientes reales que ya visitaron Catarata Nauyaca con Waterfall Shuttle CR. Sus palabras nos inspiran a seguir elevando el servicio.
+            Real guests who already visited Nauyaca Waterfall with Waterfall Shuttle CR. Their words push us to keep elevating the experience.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
@@ -34,7 +34,7 @@ export function TestimonialsSection() {
               className="flex h-full flex-col justify-between rounded-2xl border border-brand-natural/15 bg-brand-light p-6 shadow-inner"
             >
               <blockquote className="text-sm leading-relaxed text-brand-charcoal/85">
-                “{testimonial.quote}”
+                "{testimonial.quote}"
               </blockquote>
               <figcaption className="mt-6 font-semibold text-brand-deep">
                 {testimonial.name}

@@ -1,41 +1,42 @@
 # Waterfall Shuttle CR Landing Page
 
-Proyecto Next.js + TailwindCSS para la landing page de Waterfall Shuttle CR, basado en el brief de `PROJECT_CONTEXT.md`.
+Next.js + Tailwind CSS landing page for Waterfall Shuttle CR, guided by the brief in `PROJECT_CONTEXT.md`.
 
-## Requisitos
+## Requirements
 
 - Node.js 18+
-- npm o pnpm
+- npm or pnpm
 
-## Instalación
+## Installation
 
 ```bash
 npm install
 npm run dev
 ```
 
-Para generar el sitio estático listo para SiteGround:
+## Static export (SiteGround)
 
 ```bash
 npm run build
 npm run export
 ```
 
-La carpeta `/out` contendrá el HTML estático listo para subir a `public_html` en SiteGround.
+The `/out` directory will contain the static HTML ready to upload to `public_html` on SiteGround.
 
-## Pendientes / TODO
+## TODO
 
-- Reemplazar placeholders por fotografías oficiales en `public/images`.
-- Conectar el formulario de reservas con EmailJS o Resend.
-- Sustituir la animación placeholder por la ilustración SVG del shuttle cuando esté disponible.
-- Ajustar horarios, tarifas y datos de contacto con información definitiva.
+- Replace placeholders with official photos in `public/images`.
+- Connect the booking form to EmailJS or Resend.
+- Refine the shuttle animation timing/background once the full illustration direction is approved.
+- Update schedules, rates, and contact details with confirmed information.
+- Replace the temporary WhatsApp link with the official phone number.
 
 ## GitHub
 
-1. Inicializa el repositorio local: `git init`
-2. Agrega los archivos: `git add .`
-3. Realiza el primer commit: `git commit -m "chore: bootstrap landing"`
-4. Crea el repositorio remoto en GitHub y vincúlalo: `git remote add origin git@github.com:usuario/waterfall-shuttle-website.git`
-5. Sube los cambios: `git push -u origin main`
+1. Initialize the repository: `git init`
+2. Stage files: `git add .`
+3. Create the first commit: `git commit -m "chore: bootstrap landing"`
+4. Add your remote: `git remote add origin git@github.com:USERNAME/waterfall-shuttle-website.git`
+5. Push to GitHub: `git push -u origin main`
 
-> Actualiza la URL anterior con la ruta real del repositorio cuando la tengas lista.
+> Replace `USERNAME` with your actual GitHub account when ready.

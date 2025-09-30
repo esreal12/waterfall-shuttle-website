@@ -5,6 +5,8 @@ import { DestinationSection } from "@/components/sections/destination-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { HowItWorksSection } from "@/components/sections/how-it-works-section";
 import { InfoSection } from "@/components/sections/info-section";
+import { ShuttleMotionStrip } from "@/components/sections/shuttle-motion-strip";
+import { ShuttleJourneySection } from "@/components/sections/shuttle-journey-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 
 export default function HomePage() {
@@ -12,6 +14,8 @@ export default function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
+      <ShuttleMotionStrip />
+      <ShuttleJourneySection />
       <BenefitsSection />
       <DestinationSection />
       <HowItWorksSection />
