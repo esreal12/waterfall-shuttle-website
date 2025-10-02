@@ -17,20 +17,40 @@ export function ShuttleJourneySection() {
             Scroll the animation above to visualize how the shuttle glides from the coast into the Nauyaca valley.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-brand-natural/20 bg-brand-light/80 p-6 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-natural">Duration</p>
-            <p className="mt-3 font-display text-2xl text-brand-deep">~25 min ride</p>
-            <p className="mt-2 text-sm text-brand-charcoal/80">
-              Enough time for a scenic drive and quick orientation before reaching the Nauyaca entrance.
-            </p>
+        <div className="space-y-8">
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div className="rounded-2xl border border-brand-natural/20 bg-brand-light/80 p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-natural">Duration</p>
+              <p className="mt-3 font-display text-2xl text-brand-deep">~25 min ride</p>
+              <p className="mt-2 text-sm text-brand-charcoal/80">
+                Enough time for a scenic drive and quick orientation before reaching the Nauyaca entrance.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-brand-natural/20 bg-white p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-natural">Comfort</p>
+              <p className="mt-3 font-display text-2xl text-brand-deep">A/C & Wi-Fi</p>
+              <p className="mt-2 text-sm text-brand-charcoal/80">
+                The coaster is equipped with cold air, roomy seating, and connectivity for those pre-waterfall selfies.
+              </p>
+            </div>
           </div>
-          <div className="rounded-2xl border border-brand-natural/20 bg-white p-6 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-natural">Comfort</p>
-            <p className="mt-3 font-display text-2xl text-brand-deep">A/C & Wi-Fi</p>
-            <p className="mt-2 text-sm text-brand-charcoal/80">
-              The coaster is equipped with cold air, roomy seating, and connectivity for those pre-waterfall selfies.
-            </p>
+          
+          {/* Image Gallery */}
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <img
+                src="/images/waterfall-shuttle-coaster-jungle.jpg"
+                alt="Waterfall Shuttle Coaster driving through the jungle"
+                className="h-48 w-full object-cover transition hover:scale-105"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <img
+                src="/images/waterfall-shuttle-coaster-beach.jpg"
+                alt="Waterfall Shuttle Coaster parked by the beach"
+                className="h-48 w-full object-cover transition hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </div>

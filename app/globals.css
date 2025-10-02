@@ -40,3 +40,13 @@ a:hover {
 .rounded-2xl.bg-brand-deep.p-6.text-white {
   margin-top: 40px;
 }
+
+/* Tamaño de los contenedores en The Ride */
+.grid.gap-4.sm\:grid-cols-2 {
+  height: 320px;
+}
+
+/* Tamaño de las fotos en The Ride */
+img.h-48.w-full.object-cover.transition.hover\:scale-105 {
+  height: 330px;
+}

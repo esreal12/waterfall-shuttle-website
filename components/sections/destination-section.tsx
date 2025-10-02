@@ -1,3 +1,64 @@
+import { ImageSlider } from "@/components/ui/image-slider";
+
+const nauyacaImages = [
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-1.jpg",
+    alt: "Nauyaca Waterfall shuttle view 1"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-2.jpg",
+    alt: "Nauyaca Waterfall shuttle view 2"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-3.jpg",
+    alt: "Nauyaca Waterfall shuttle view 3"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-4.jpg",
+    alt: "Nauyaca Waterfall shuttle view 4"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-5.jpg",
+    alt: "Nauyaca Waterfall shuttle view 5"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-6.jpg",
+    alt: "Nauyaca Waterfall shuttle view 6"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-7.jpg",
+    alt: "Nauyaca Waterfall shuttle view 7"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-8.jpg",
+    alt: "Nauyaca Waterfall shuttle view 8"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-9.jpg",
+    alt: "Nauyaca Waterfall shuttle view 9"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-10.jpg",
+    alt: "Nauyaca Waterfall shuttle view 10"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-11.jpg",
+    alt: "Nauyaca Waterfall shuttle view 11"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-12.jpg",
+    alt: "Nauyaca Waterfall shuttle view 12"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-13.jpg",
+    alt: "Nauyaca Waterfall shuttle view 13"
+  },
+  {
+    src: "/images/nauyaca-waterfall-shtuttle-14.jpg",
+    alt: "Nauyaca Waterfall shuttle view 14"
+  }
+];
+
 export function DestinationSection() {
   return (
     <section id="destination" className="bg-white py-20">
@@ -17,12 +78,17 @@ export function DestinationSection() {
             href="#booking"
             className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-natural hover:text-brand-deep"
           >
-            Book your ride now ->
+            Book your ride now →
           </a>
         </div>
-        <div className="placeholder-media h-[360px]">
-          This area will showcase a panoramic shot of Nauyaca Waterfall at sunset.
-        </div>
+        <ImageSlider 
+          images={nauyacaImages}
+          height="h-[360px] lg:h-[400px]"
+          showDots={true}
+          showArrows={true}
+          autoPlay={true}
+          autoPlayInterval={4000}
+        />
       </div>
     </section>
   );
