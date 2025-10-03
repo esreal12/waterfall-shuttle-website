@@ -97,18 +97,18 @@ a:hover {
 
 /* Ensure consistent slider heights and proper image positioning - only for sliders */
 .relative.overflow-hidden.bg-gray-100 {
-  height: 400px;
+  height: 500px !important;
 }
 
 @media (max-width: 640px) {
   .relative.overflow-hidden.bg-gray-100 {
-    height: 300px;
+    height: 400px !important;
   }
 }
 
 @media (min-width: 1024px) {
   .relative.overflow-hidden.bg-gray-100 {
-    height: 450px;
+    height: 550px !important;
   }
 }
 
@@ -118,6 +118,16 @@ a:hover {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+
+/* Better centering for vehicle images - show complete vehicle */
+.relative.overflow-hidden.bg-gray-100 img[alt*="shuttle"],
+.relative.overflow-hidden.bg-gray-100 img[alt*="bus"],
+.relative.overflow-hidden.bg-gray-100 img[alt*="coach"],
+.relative.overflow-hidden.bg-gray-100 img[alt*="Waterfall Shuttle"],
+.relative.overflow-hidden.bg-gray-100 img[alt*="costanera"],
+.relative.overflow-hidden.bg-gray-100 img[alt*="coaster"] {
+  object-position: center 30% !important;
 }
 
 /* Remove conflicting styles - only use custom slider classes */

@@ -17,7 +17,7 @@ interface ImageSliderProps {
 
 export function ImageSlider({
   images,
-  height = "h-[300px] sm:h-[400px] lg:h-[450px]",
+  height = "h-[400px] sm:h-[500px] lg:h-[550px]",
   showDots = true,
   showArrows = true,
   autoPlay = false,

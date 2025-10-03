@@ -51,7 +51,7 @@ export function AboutSection() {
         </div>
         <div className="relative order-1 lg:order-2">
           {/* Carousel Container */}
-          <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-gray-100 h-[300px] sm:h-[400px] lg:h-[450px]">
+          <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-gray-100 h-[400px] sm:h-[500px] lg:h-[550px]">
             <div className="flex transition-transform duration-500 ease-in-out h-full" id="image-carousel">
               {/* Image 1 */}
               <div className="w-full flex-shrink-0 h-full">
