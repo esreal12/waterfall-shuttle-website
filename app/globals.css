@@ -93,10 +93,7 @@ a:hover {
   }
 }
 
-/* Fix slider issues */
-#image-carousel {
-  transform: translateX(0%) !important;
-}
+/* Fix slider issues - Removed problematic transform override */
 
 /* Ensure consistent slider heights and proper image positioning - only for sliders */
 .relative.overflow-hidden.bg-gray-100 {
