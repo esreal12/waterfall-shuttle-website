@@ -26,24 +26,24 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section id="benefits" className="bg-brand-light py-20">
-      <div className="container space-y-12">
-        <div className="max-w-2xl space-y-4">
+    <section id="benefits" className="bg-brand-light py-12 sm:py-16 md:py-20">
+      <div className="container space-y-8 sm:space-y-10 md:space-y-12">
+        <div className="max-w-2xl space-y-3 sm:space-y-4">
           <p className="section-eyebrow">Benefits</p>
           <h2 className="section-title">Everything you need to travel stress-free</h2>
           <p className="lead">
             We designed each detail with the traveler in mind: clear logistics, direct communication, and an authentic experience.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className="rounded-2xl border border-brand-natural/20 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="rounded-xl sm:rounded-2xl border border-brand-natural/20 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="text-3xl">{benefit.icon}</div>
-              <h3 className="mt-4 font-display text-2xl text-brand-deep">{benefit.title}</h3>
-              <p className="mt-2 text-sm text-brand-charcoal/80">{benefit.description}</p>
+              <div className="text-2xl sm:text-3xl">{benefit.icon}</div>
+              <h3 className="mt-3 sm:mt-4 font-display text-lg sm:text-xl lg:text-2xl text-brand-deep">{benefit.title}</h3>
+              <p className="mt-2 text-xs sm:text-sm text-brand-charcoal/80">{benefit.description}</p>
             </div>
           ))}
         </div>

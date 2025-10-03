@@ -10,6 +10,8 @@
 
 body {
   @apply bg-brand-light text-brand-black font-body antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -21,15 +23,15 @@ a:hover {
 }
 
 .section-eyebrow {
-  @apply uppercase tracking-[0.24em] text-sm font-semibold text-brand-natural;
+  @apply uppercase tracking-[0.24em] text-xs sm:text-sm font-semibold text-brand-natural;
 }
 
 .section-title {
-  @apply font-display text-4xl md:text-5xl text-brand-black;
+  @apply font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-brand-black;
 }
 
 .lead {
-  @apply text-lg md:text-xl text-brand-charcoal/90;
+  @apply text-base sm:text-lg md:text-xl text-brand-charcoal/90;
 }
 
 .placeholder-media {
@@ -41,12 +43,241 @@ a:hover {
   margin-top: 40px;
 }
 
-/* Tamaño de los contenedores en The Ride */
-.grid.gap-4.sm\:grid-cols-2 {
-  height: 320px;
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  /* Improve touch targets */
+  button, a, input, textarea, select {
+    min-height: 44px;
+  }
+  
+  /* Better spacing for mobile */
+  .space-y-4 > * + * {
+    margin-top: 0.75rem;
+  }
+  
+  .space-y-6 > * + * {
+    margin-top: 1rem;
+  }
 }
 
-/* Tamaño de las fotos en The Ride */
-img.h-48.w-full.object-cover.transition.hover\:scale-105 {
-  height: 330px;
+/* Additional padding for very small screens */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+/* Force more padding on all containers */
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Fix slider issues */
+#image-carousel {
+  transform: translateX(0%) !important;
+}
+
+/* Ensure consistent slider heights and proper image positioning - only for sliders */
+.relative.overflow-hidden.bg-gray-100 {
+  height: 400px;
+}
+
+@media (max-width: 640px) {
+  .relative.overflow-hidden.bg-gray-100 {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .relative.overflow-hidden.bg-gray-100 {
+    height: 450px;
+  }
+}
+
+/* Ensure proper image sizing in sliders */
+.relative.overflow-hidden.bg-gray-100 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Remove conflicting styles - only use custom slider classes */
+
+/* Custom slider classes - Override all Tailwind styles */
+.slider-arrow {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+  outline: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  will-change: auto !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+}
+
+.slider-arrow-left {
+  left: 8px !important;
+}
+
+.slider-arrow-right {
+  right: 8px !important;
+}
+
+.slider-arrow:hover {
+  background-color: white !important;
+  box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-50%) !important;
+}
+
+.slider-arrow:active {
+  transform: translateY(-50%) !important;
+}
+
+.slider-arrow:focus {
+  transform: translateY(-50%) !important;
+  outline: 2px solid theme('colors.brand.turquoise') !important;
+  outline-offset: 2px !important;
+}
+
+.slider-arrow-icon {
+  width: 20px !important;
+  height: 20px !important;
+  color: #374151 !important;
+  flex-shrink: 0 !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+}
+
+.slider-dots-container {
+  margin-top: 1rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+.slider-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: #d1d5db !important;
+  border: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out !important;
+  min-width: 8px !important;
+  min-height: 8px !important;
+  max-width: 8px !important;
+  max-height: 8px !important;
+}
+
+.slider-dot:hover {
+  background-color: #9ca3af !important;
+}
+
+.slider-dot:focus {
+  outline: 2px solid theme('colors.brand.turquoise') !important;
+  outline-offset: 2px !important;
+}
+
+.slider-dot-active {
+  background-color: theme('colors.brand.turquoise') !important;
+  transform: scale(1.2) !important;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 640px) {
+  .slider-arrow {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
+  }
+  
+  .slider-arrow-left {
+    left: 4px !important;
+  }
+  
+  .slider-arrow-right {
+    right: 4px !important;
+  }
+  
+  .slider-arrow-icon {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    max-width: 16px !important;
+    max-height: 16px !important;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure hero section has proper height */
+#hero {
+  min-height: 100vh;
+}
+
+@media (max-width: 640px) {
+  #hero {
+    min-height: 80vh;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid theme('colors.brand.turquoise');
+  outline-offset: 2px;
 }

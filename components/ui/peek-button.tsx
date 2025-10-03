@@ -4,7 +4,7 @@ import { Button } from "./button";
 
 interface PeekButtonProps {
   variant?: "book" | "gift";
-  size?: "small" | "medium" | "large";
+  size?: "small" | "large";
   className?: string;
   children?: React.ReactNode;
 }
@@ -16,7 +16,7 @@ const PEEK_URLS = {
 
 export function PeekButton({ 
   variant = "book", 
-  size = "medium", 
+  size = "large", 
   className = "",
   children 
 }: PeekButtonProps) {
